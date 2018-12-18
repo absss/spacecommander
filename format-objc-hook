@@ -32,6 +32,11 @@ function format_objc() {
   done
   if [ $success -gt 0 ]; then
       echo -e "\n🚀  Format and stage all affected files:\n\t \"$DIR\"/format-objc-files.sh -s"
+
+      ## TODO:检查后，会帮你直接格式化，但是不会提交
+       echo -e "\n🚀  正在运行格式化命令...\n"
+      "$DIR"/format-objc-files.sh -s
+      echo -e "\n🚀  格式化完毕，请检查代码后提交..."
   fi
   return $success 
 }
