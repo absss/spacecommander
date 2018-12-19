@@ -4,7 +4,7 @@ IndentNestedBlocks: false
 AllowNewlineBeforeBlockParameter: false
 
 Language:        Cpp
-# BasedOnStyle:  Google
+BasedOnStyle:  LLVM
 AccessModifierOffset: -1
 ConstructorInitializerIndentWidth: 4
 SortIncludes: false
