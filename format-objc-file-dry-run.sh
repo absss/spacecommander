@@ -23,7 +23,7 @@ python "$DIR"/custom/GenericCategoryLinebreakIndentation.py | \
 python "$DIR"/custom/ParameterAfterBlockNewline.py | \
 python "$DIR"/custom/HasIncludeSpaceRemover.py | \
 python "$DIR"/custom/NewLineAtEndOfFileInserter.py | \
-python "$DIR"/custom/SingleBracesDontNewLines.py
-
+python "$DIR"/custom/SingleBracesDontNewLines.py  | \
+python "$DIR"/custom/SingleCommentAddSpace.py
 
 

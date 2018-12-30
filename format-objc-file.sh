@@ -38,3 +38,6 @@ python "$DIR"/custom/HasIncludeSpaceRemover.py "$1"
 python "$DIR"/custom/NewLineAtEndOfFileInserter.py "$1"
 ## hehaichi add
 python "$DIR"/custom/SingleBracesDontNewLines.py "$1"
+## hehaichi add
+python "$DIR"/custom/SingleCommentAddSpace.py "$1"
+

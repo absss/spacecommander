@@ -67,12 +67,12 @@ BOOL extraSemicolonsNotInsertedAfterCGStructInitializer()
 - (void)performOnMainThreadUsingBlock:(dispatch_block_t)block SQ_DEPRECATED("Should use addOperationWithBlock: on NSOperationQueue's mainQueue. Will be removed after 3/1/2015.");
 @end
 
-// The below interface should have its prepended newlines left alone due to this comment
+//The below interface should have its prepended newlines left alone due to this comment
 @interface Foo
 @end
 
 
-// The inline constructors here are problematic and will get a semicolon added unless we put them on a single line.
+//The inline constructors here are problematic and will get a semicolon added unless we put them on a single line.
 struct Update {
 	UpdateType type;
 	string value;
