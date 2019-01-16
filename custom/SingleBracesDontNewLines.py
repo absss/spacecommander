@@ -8,9 +8,7 @@ class SingleBracesDontNewLines(AbstractCustomFormatter):
         lines_to_write = []
         previous_line = ''; #上一行
         for line in lines:
-            
             stripped_line = line.strip()
-            
             if stripped_line == "{":
                 if previous_line.endswith('\n'):
                     previous_line = previous_line[:-1]

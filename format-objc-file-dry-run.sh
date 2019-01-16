@@ -24,6 +24,8 @@ python "$DIR"/custom/ParameterAfterBlockNewline.py | \
 python "$DIR"/custom/HasIncludeSpaceRemover.py | \
 python "$DIR"/custom/NewLineAtEndOfFileInserter.py | \
 python "$DIR"/custom/SingleBracesDontNewLines.py  | \
-python "$DIR"/custom/SingleCommentAddSpace.py
+python "$DIR"/custom/SingleCommentAddSpace.py  | \
+python "$DIR"/custom/CodeSecurityChecks.py
+
 
 
