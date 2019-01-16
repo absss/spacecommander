@@ -61,7 +61,7 @@ def check(s):
                 Error = '%s maybe should use %s'%(type,'copy')
         elif isDelegate(type):
             if not containWeak(keywords):
-                Error = '%s if it is a protocol,you should use weak,if not , you can use `// ignore check error to` to ignore it'%(type,'weak')
+                Error = '%s if it is a protocol,you should use weak,if not , you can use `// ignore check error to` to ignore it'%(type)
     return Error
 
 ## TODO: 格式检查
