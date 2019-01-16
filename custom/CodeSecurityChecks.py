@@ -45,7 +45,7 @@ def check(s):
     type = None
     Error = None;
     keywords = []
-    useCopyTypeArray = ['NSArray','NSString','NSDictionary','NSSet','NSArray','NSArray','NSArray']
+    useCopyTypeArray = ['NSArray','NSString','NSDictionary','NSSet','NSURLRequest']
     useAssignTypeArray = ['CGFloat','int','double','float','long','NSInteger','unsign','BOOL']
     if res:
         for s in res.groups()[0].split(','):
@@ -61,7 +61,7 @@ def check(s):
                 Error = '%s maybe should use %s'%(type,'copy')
         elif isDelegate(type):
             if not containWeak(keywords):
-                Error = '%s maybe should use %s'%(type,'weak')
+                Error = '%s if it is a protocol,you should use weak,if not , you can use `// ignore check error to` to ignore it'%(type,'weak')
     return Error
 
 ## TODO: 格式检查
